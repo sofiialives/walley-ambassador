@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOMETA × Walley — Амбассадорская программа</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div class="starfield" aria-hidden="true">
+    <div class="star-layer star-layer--small"></div>
+    <div class="star-layer star-layer--medium"></div>
+    <div class="star-layer star-layer--colored"></div>
+    <span class="accent-star accent-star--blue" style="width:3px;height:3px;top:12%;left:18%"></span>
+    <span class="accent-star accent-star--purple" style="width:4px;height:4px;top:24%;left:72%;animation-delay:-0.8s"></span>
+    <span class="accent-star accent-star--blue" style="width:3px;height:3px;top:38%;left:44%;animation-delay:-2s"></span>
+    <span class="accent-star accent-star--purple" style="width:3px;height:3px;top:55%;left:9%;animation-delay:-1.4s"></span>
+    <span class="accent-star accent-star--blue" style="width:4px;height:4px;top:68%;left:82%;animation-delay:-2.6s"></span>
+    <span class="accent-star accent-star--purple" style="width:3px;height:3px;top:81%;left:29%;animation-delay:-0.4s"></span>
+    <span class="accent-star accent-star--blue" style="width:3px;height:3px;top:92%;left:61%;animation-delay:-1.8s"></span>
+    <span class="accent-star accent-star--purple" style="width:4px;height:4px;top:6%;left:52%;animation-delay:-3s"></span>
+  </div>
+
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob ambient-blob--1"></div>
+    <div class="ambient-blob ambient-blob--2"></div>
+    <div class="ambient-blob ambient-blob--3"></div>
+    <div class="ambient-blob ambient-blob--4"></div>
+  </div>
+
+  <div class="page">
+
+    <header class="header">
+      <div class="container header__inner">
+        <img src="./images/kometa.png" alt="KOMETA logo" class="header__brand-logo">
+        <div class="header__label">Амбассадорская программа · 2026</div>
+        <div class="client-chip">
+          <div class="logo">
+            <img src="https://walley.pro/images/walley-logo.png" alt="Walley">
+            Walley
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__orb hero__orb--blue" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--purple" aria-hidden="true"></div>
+      <div class="circuit" aria-hidden="true">
+        <div class="circuit__line circuit__line--r" style="top:18%;right:0;width:18%"></div>
+        <div class="circuit__line circuit__line--r" style="top:36%;right:0;width:25%"></div>
+        <div class="circuit__line circuit__line--r" style="top:55%;right:0;width:32%"></div>
+        <div class="circuit__line circuit__line--r" style="top:73%;right:0;width:39%"></div>
+        <div class="circuit__line circuit__line--r" style="top:89%;right:0;width:46%"></div>
+        <div class="circuit__line circuit__line--l" style="top:22%;left:0;width:14%"></div>
+        <div class="circuit__line circuit__line--l" style="top:40%;left:0;width:19%"></div>
+        <div class="circuit__line circuit__line--l" style="top:58%;left:0;width:24%"></div>
+        <div class="circuit__line circuit__line--l" style="top:76%;left:0;width:29%"></div>
+        <div class="circuit__line circuit__line--l" style="top:92%;left:0;width:34%"></div>
+      </div>
+      <div class="particles" aria-hidden="true" id="particles"></div>
+
+      <div class="container hero__content">
+        <div class="reveal" data-delay="0">
+          <div class="pill"><span class="pill__dot"></span>Walley × Ambassador Program</div>
+        </div>
+
+        <h1 class="hero__title reveal" data-delay="80">АМБАССАДОРСКАЯ</h1>
+        <h1 class="hero__title hero__title--gradient reveal" data-delay="140">ПРОГРАММА</h1>
+
+        <div class="hero__divider reveal" data-delay="160">
+          <span class="hero__divider-line"></span>
+          <span class="glow-dot glow-dot--blue" style="--size:5px"></span>
+          <span class="hero__x">×</span>
+          <span class="glow-dot glow-dot--purple" style="--size:5px"></span>
+          <span class="hero__divider-line hero__divider-line--right"></span>
+        </div>
+
+        <h1 class="hero__title reveal" data-delay="160">ДЛЯ WALLEY</h1>
+
+        <p class="hero__text reveal" data-delay="260">
+          Постоянный пул амбассадоров, которые системно продвигают сервис на своё имя, через
+          <span class="hl">доверие и реферальный доход</span>
+        </p>
+
+        <div class="hero__meta reveal" data-delay="400">
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">Команда проекта</div>
+            <div class="hero__meta-value">10 специалистов</div>
+          </div>
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">Формат</div>
+            <div class="hero__meta-value">Чат + бот</div>
+          </div>
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">Инвестиция</div>
+            <div class="hero__meta-value">2 700 $ + 1 500 $</div>
+          </div>
+        </div>
+
+        <div class="divider" style="margin-top:64px;margin-bottom:0"></div>
+      </div>
+    </section>
+
+<!-- ============ ФОКУС ПРОГРАММЫ: КАК МЫ ВИДИМ WALLEY ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">FOCUS</div>
+      <div class="container section__pad-top" style="padding-top:80px">
+        <div class="reveal" data-delay="20" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Фокус программы</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">Как мы видим Walley в амбассадорке</h2>
+          <p class="p-body" style="margin-top:20px;max-width:760px">Главный сценарий, вокруг которого строим контент: <span class="hl">оплатил зарубежный сервис за 5 минут</span>. Пользователь выпускает карту, пополняет через СБП и платит там, где обычная российская карта не проходит. Понятная повторяющаяся боль аудитории (не могу оплатить ChatGPT/Steam/Booking) и сильный конверсионный сценарий.</p>
+        </div>
+        <div class="section__grid section__grid--3 reveal" data-delay="40">
+          <div class="stat-card glass">
+            <div class="stat-card__num">120 000+</div>
+            <div class="stat-card__label">пользователей уже платят картой</div>
+            <div class="stat-card__sub">готовая доказательная база — не нужно объяснять с нуля, что продукт работает</div>
+          </div>
+          <div class="stat-card glass">
+            <div class="stat-card__num">42+</div>
+            <div class="stat-card__label">сервиса в каталоге «Где платить»</div>
+            <div class="stat-card__sub">под каждый уже готова инструкция — блогеру не нужно самому разбираться</div>
+          </div>
+          <div class="stat-card glass">
+            <div class="stat-card__num">5 мин</div>
+            <div class="stat-card__label">от выпуска карты до первого платежа</div>
+            <div class="stat-card__sub">короткий и понятный сценарий, легко показать на камеру целиком</div>
+          </div>
+        </div>
+        <div class="reveal" data-delay="60" style="margin-top:28px;display:flex;flex-wrap:wrap;gap:8px">
+          <span class="tag">техно-блогеры</span><span class="tag">обзорщики подписок</span><span class="tag">фрилансеры</span><span class="tag">путешественники</span><span class="tag">геймеры</span><span class="tag">айтишники</span><span class="tag">оплата зарубежных сервисов</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 1: ПОЧЕМУ ИМЕННО АМБАССАДОРСКАЯ ПРОГРАММА ============ -->
+    <section class="section section--about">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">TRUST</div>
+      <div class="divider"></div>
+      <div class="container section__grid section__grid--2">
+        <div class="reveal" data-delay="0">
+          <div class="pill"><span class="pill__dot"></span>Обоснование</div>
+          <h2 class="h2" style="margin-top:32px">Почему именно<br>амбассадорская программа</h2>
+        </div>
+
+        <div class="reveal" data-delay="140">
+          <p class="p-body">
+            Walley растёт на одном из самых конкурентных рынков — сервисы виртуальных карт и оплаты зарубежных подписок. Холодная реклама здесь даёт дорогой и
+            нестабильный охват: <span class="hl">аудитория не верит баннерам</span>, выбирает <span class="hl">по рекомендациям знакомых трейдеров</span>, а стоимость привлечения растёт с каждым
+            месяцем.
+          </p>
+          <p class="p-body">
+            Амбассадорская программа решает эту задачу иначе: через доверие, которое уже есть у инфлюенсеров и админов
+            каналов к их подписчикам. Мы строим не разовую рекламную кампанию, а <span class="hl">самовоспроизводящуюся систему привлечения</span>, которая на старте требует бюджета, а затем масштабируется: за счёт реферальной механики и
+            социального доказательства внутри самой программы.
+          </p>
+          <div class="path-strip path-strip--tight" style="margin:8px 0 28px">
+            <span class="path-strip__step">Бюджет на старте</span>
+            <span class="path-strip__arrow">→</span>
+            <span class="path-strip__step">Реферальная механика</span>
+            <span class="path-strip__arrow">→</span>
+            <span class="path-strip__step">Социальное доказательство</span>
+            <span class="path-strip__arrow">→</span>
+            <span class="path-strip__step path-strip__step--final">Органический рост</span>
+          </div>
+          <div class="about__callout glass">
+            <span class="glow-dot glow-dot--blue" style="--size:6px;margin-top:3px"></span>
+            <p><span class="about__callout-strong">Мы уже реализовывали эту модель</span> для AI и финтех-проектов и
+              понимаем специфику именно вашей ниши: платёжные карты, оплата подписок и покупок за рубежом.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ЦЕЛИ ПРОГРАММЫ ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">GOALS</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Цели</div>
+          <h2 class="h2" style="margin-top:24px;max-width:680px">Цели программы для Walley</h2>
+        </div>
+        <div class="goals-grid reveal" data-delay="40">
+          <div class="goal-card glass"><span class="check-badge">✓</span><p>Привлечение <b>100+ качественных партнёров</b>: каждый прошёл проверку, реальная аудитория, прозрачный трафик</p></div>
+          <div class="goal-card glass"><span class="check-badge">✓</span><p>Рост базы <b>активных подписчиков сервиса</b>: люди, которые подключаются и остаются пользоваться на постоянной основе</p></div>
+          <div class="goal-card glass"><span class="check-badge">✓</span><p><b>Постоянный приток целевого трафика</b>: амбассадоры ведут аудиторию через обзоры, гайды и рекомендации</p></div>
+          <div class="goal-card glass"><span class="check-badge">✓</span><p><b>Система на постоянной основе</b>: не разовая реклама, а растущая сеть партнёров с реферальной механикой</p></div>
+          <div class="goal-card glass"><span class="check-badge">✓</span><p><b>Работающая инфраструктура</b>: чат с готовыми материалами, креативами и реф-ссылками плюс бот-кабинет</p></div>
+          <div class="goal-card glass"><span class="check-badge">✓</span><p><b>Лояльное комьюнити партнёров</b>: вовлечённое сообщество, заинтересованное в развитии Walley</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 2: ЧТО МЫ ДЕЛАЕМ: ПОЛНЫЙ ЦИКЛ ============ -->
+    <section class="section">
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Что мы делаем</div>
+          <h2 class="h2" style="margin-top:24px;max-width:640px">Полный цикл, а не просто чат</h2>
+        </div>
+
+        <div class="reveal" data-delay="60" style="margin-bottom:24px">
+          <p class="p-body" style="max-width:820px">
+            В отличие от стандартного подхода «сделали чат и закинули туда амбассадоров», мы выстраиваем <span class="hl">чат как воронку</span>, а не набор разрозненных тем. Каждый амбассадор проходит понятный путь:
+          </p>
+        </div>
+        <div class="path-strip reveal" data-delay="80">
+          <span class="path-strip__step">Узнал</span>
+          <span class="path-strip__arrow">→</span>
+          <span class="path-strip__step">Разобрался</span>
+          <span class="path-strip__arrow">→</span>
+          <span class="path-strip__step">Начал действовать</span>
+          <span class="path-strip__arrow">→</span>
+          <span class="path-strip__step">Увидел результат</span>
+          <span class="path-strip__arrow">→</span>
+          <span class="path-strip__step path-strip__step--final">Замотивирован расти</span>
+        </div>
+        <div class="reveal" data-delay="100" style="max-width:820px;margin-bottom:64px">
+          <p class="p-body" style="margin-top:24px">
+            Структура работает на <span class="hl">удержание и рост инициативы</span> амбассадора, а не просто хранит информацию. Отдельно делаем <span class="hl">полноценного бота с личным кабинетом</span>, который связывает всю программу в единую систему.
+          </p>
+        </div>
+
+        <div class="features-list">
+
+          <!-- Block 1 -->
+          <div class="feature-panel glass reveal" data-delay="0">
+            <div class="feature-panel__head">
+              <div class="feature-panel__num">01</div>
+              <h3 class="feature-panel__title">Стратегия и механика</h3>
+            </div>
+            <div class="feature-panel__body">
+              <ul class="feature-panel__list">
+                <li>Анализ продукта Walley, целевой аудитории и конкурентного поля в сегменте виртуальных карт</li>
+                <li>Система мотивации: лидерборды, челленджи и мини-механики, нацеленные на прокачку инициативы
+                  амбассадора, а не на пассивное участие</li>
+                <li>Определение целевых каналов: техно-блогинг, обзоры подписок и сервисов, комьюнити фрилансеров и айтишников</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Block 2 -->
+          <div class="feature-panel glass reveal" data-delay="60">
+            <div class="feature-panel__head">
+              <div class="feature-panel__num">02</div>
+              <h3 class="feature-panel__title">Амбассадорский чат как воронка</h3>
+            </div>
+            <div class="feature-panel__body">
+              <p class="feature-panel__intro">Полноценная структура из 14+ веток, выстроенная в логике последовательного
+                вовлечения, а не разброса по темам:</p>
+              <ul class="feature-panel__list feature-panel__list--cols">
+                <li>Гайд по программе: правила, FAQ, реферальная механика</li>
+                <li>Новости и обновления</li>
+                <li>Готовые посты: шаблоны под разные площадки</li>
+                <li>Креативы: баннеры, сторис, карусели, видео</li>
+                <li>Идеи для постинга</li>
+                <li>Активные кампании: задания, дедлайны, призовой фонд</li>
+                <li>Реферальные ссылки и инструкции</li>
+                <li>Ссылки на посты: учёт активности</li>
+                <li>Вознаграждения и выплаты: полная прозрачность, скрины начислений</li>
+                <li>KPI и рейтинги: лидерборд, топ недели/месяца</li>
+                <li>Розыгрыши и бонусы</li>
+                <li>Чат / переговорка</li>
+                <li>Поддержка</li>
+                <li>Предложения и улучшения</li>
+              </ul>
+              <p class="feature-panel__closing">Плюс: welcome-цепочка и логика переходов между ветками, чтобы новый
+                амбассадор не терялся, а сразу понимал, что делать дальше.</p>
+            </div>
+          </div>
+
+          <!-- Block 3 -->
+          <div class="feature-panel glass reveal" data-delay="120">
+            <div class="feature-panel__head">
+              <div class="feature-panel__num">03</div>
+              <h3 class="feature-panel__title">Бот: личный кабинет амбассадора</h3>
+            </div>
+            <div class="feature-panel__body">
+              <p class="feature-panel__intro">Бот, объединяющий
+                амбассадора и программу в одном месте.</p>
+              <ul class="feature-panel__list">
+                <li>Личный кабинет с профилем и статистикой участника</li>
+                <li>Лидерборд: амбассадор видит своё место в рейтинге в реальном времени</li>
+                <li>Текущие активности и челленджи: что доступно прямо сейчас</li>
+                <li>Обучающий блок: онбординг и материалы по программе, полноценная академия, которая будет цеплять не
+                  только визуалом, но и логикой</li>
+                <li>Уведомления о новых кампаниях, выплатах, розыгрышах</li>
+                <li>Возможность сдавать выкладки в бота</li>
+              </ul>
+              <p class="feature-panel__closing">Бот держит амбассадора в программе даже когда он не
+                читает чат: он получает уведомления, видит прогресс и возвращается за результатом!</p>
+            </div>
+          </div>
+
+          <!-- Block 4 -->
+          <div class="feature-panel glass reveal" data-delay="180">
+            <div class="feature-panel__head">
+              <div class="feature-panel__num">04</div>
+              <h3 class="feature-panel__title">Контент и креативы</h3>
+            </div>
+            <div class="feature-panel__body">
+              <ul class="feature-panel__list">
+                <li>20+ промо-постов, адаптированных под Telegram, X (Twitter), YouTube и Habr</li>
+                <li>20+ визуальных креативов: баннеры, сторис, карточки для каруселей</li>
+                <li>Подборка сценариев и идей для постинга, видео, shorts и статей</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Block 5 -->
+          <div class="feature-panel glass reveal" data-delay="240">
+            <div class="feature-panel__head">
+              <div class="feature-panel__num">05</div>
+              <h3 class="feature-panel__title">Привлечение амбассадоров с антифрод-проверкой</h3>
+            </div>
+            <div class="feature-panel__body">
+              <p class="feature-panel__intro">В отличие от простого закупа, мы подключаем полноценный отдел закупщиков,
+                который проверяет каждый канал перед входом в программу:</p>
+              <ul class="feature-panel__list">
+                <li>Антифрод-проверка каналов: исключаем накрутку, фейковую активность, боты в подписчиках</li>
+                <li>В приоритете: качественные ресурсы: знакомые каналы, партнёрская база, личные наработки команды
+                </li>
+                <li>Прогрев и поэтапное вовлечение инфлюенсера в программу, а не разовая покупка поста</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ЧТО ВХОДИТ В АМБАССАДОРСКИЙ ЧАТ ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">CHAT</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:16px">
+          <div class="pill"><span class="pill__dot"></span>Инфраструктура</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">Что входит в амбассадорский чат</h2>
+        </div>
+        <p class="p-body reveal" data-delay="30" style="max-width:820px;margin-bottom:40px">
+          Сердце программы: структурированный Telegram-чат на ветках, который мы <span class="hl">создаём, наполняем и ведём за вас</span>. Амбассадору не нужно ничего придумывать: он заходит и берёт готовое.
+        </p>
+        <div class="rubric-grid reveal" data-delay="50" style="grid-template-columns:repeat(4,1fr)">
+          <div class="rubric-item glass">
+            <div class="rubric-item__title">Информация и правила</div>
+            <div class="rubric-item__desc">Гайд по программе, FAQ и механика рефералки · новости продукта · вознаграждения и выплаты · лидерборд и KPI</div>
+          </div>
+          <div class="rubric-item glass">
+            <div class="rubric-item__title">Готовые материалы</div>
+            <div class="rubric-item__desc">Шаблоны постов под все платформы · креативы: баннеры, сторис, видео · индивидуальные реф-ссылки · идеи и сценарии</div>
+          </div>
+          <div class="rubric-item glass">
+            <div class="rubric-item__title">Активность и задания</div>
+            <div class="rubric-item__desc">Кампании с дедлайнами · отчёты по вышедшим постам · розыгрыши и конкурсы</div>
+          </div>
+          <div class="rubric-item glass">
+            <div class="rubric-item__title">Коммуникация</div>
+            <div class="rubric-item__desc">Живое общение и переговорка · поддержка и ответы · предложения от партнёров</div>
+          </div>
+        </div>
+        <p class="mono-caption reveal" data-delay="70" style="margin-top:48px;margin-bottom:20px">Так это выглядит вживую · действующий чат Umnik.AI</p>
+        <p class="p-body reveal" data-delay="80" style="max-width:820px;margin-bottom:8px">
+          Реальные скрины амбассадорского чата, который мы уже ведём: десятки активных амбассадоров и сотни публикаций. Для Walley сделаем такой же по структуре и оформлению.
+        </p>
+        <div class="uc-shotgrid uc-shotgrid--5 reveal" data-delay="100">
+          <div class="uc-shot"><img src="./images/chat-structure-fresh.png" alt="Живые ветки и топики чата" loading="lazy"><span>Живые ветки и топики чата</span></div>
+          <div class="uc-shot"><img src="./images/chat-branches-74.jpg" alt="Живой чат: 74 участника и рабочие ветки" loading="lazy"><span>Живой чат: 74 участника и рабочие ветки</span></div>
+          <div class="uc-shot"><img src="./images/chat-guide.jpg" alt="Закреп: гайд по программе" loading="lazy"><span>Закреп: гайд по программе</span></div>
+          <div class="uc-shot"><img src="./images/chat-products.jpg" alt="Закреп: продукт и сценарии" loading="lazy"><span>Закреп: продукт и сценарии</span></div>
+          <div class="uc-shot"><img src="./images/chat-posted.jpg" alt="Ветка размещённый материал" loading="lazy"><span>Ветка «Размещённый материал»</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ПРИМЕРЫ ИНТЕГРАЦИЙ · КЕЙС UMNIK.AI ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">CASE</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:16px">
+          <div class="pill"><span class="pill__dot"></span>Действующий проект</div>
+          <h2 class="h2" style="margin-top:24px;max-width:760px">Примеры рекламных интеграций · кейс Umnik.AI</h2>
+        </div>
+        <p class="p-body reveal" data-delay="30" style="max-width:820px;margin-bottom:40px">
+          Так выглядят наши интеграции на практике, на примере амбассадорки, которую мы уже ведём для Umnik.AI. Не «оплати и выложи лого», а <span class="hl">нативный контент под аудиторию каждого автора</span>. Под Walley сделаем так же.
+        </p>
+        <div class="section__grid section__grid--3 reveal" data-delay="50">
+          <div class="pub-card glass">
+            <div class="pub-card__net">Instagram Reels</div>
+            <h3 class="pub-card__title">serdobolka</h3>
+            <p class="pub-card__desc">Нативная интеграция с призывом в комментарии</p>
+            <div class="pub-card__stats"><span>❤️ 140</span><span>💬 211</span></div>
+            <a class="pub-card__link" href="https://www.instagram.com/reel/DYnK5YLNNW7" target="_blank" rel="noopener">Смотреть Reels →</a>
+          </div>
+          <div class="pub-card glass">
+            <div class="pub-card__net">YouTube</div>
+            <h3 class="pub-card__title">Forgetme</h3>
+            <p class="pub-card__desc">Целевая интеграция внутри ролика, нативный обзор</p>
+            <div class="pub-card__stats"><span>🎬 Обзор в ролике</span></div>
+            <a class="pub-card__link" href="https://youtu.be/lsCJMugBDtk" target="_blank" rel="noopener">Смотреть видео →</a>
+          </div>
+          <div class="pub-card glass">
+            <div class="pub-card__net">TikTok</div>
+            <h3 class="pub-card__title">iirepresent</h3>
+            <p class="pub-card__desc">«Сайты, которые ты должен знать»</p>
+            <div class="pub-card__stats"><span>❤️ 4 332</span><span>🔖 3 373</span><span>↪️ 484</span></div>
+            <a class="pub-card__link" href="https://www.tiktok.com/@iirepresent/video/7645290416572730645" target="_blank" rel="noopener">Смотреть видео →</a>
+          </div>
+        </div>
+        <div class="uc-shotgrid reveal" data-delay="80">
+          <div class="uc-shot"><img src="./images/activity-reach.png" alt="Активность «Борьба за охват»" loading="lazy"><span>Активность «Борьба за охват»</span></div>
+          <div class="uc-shot"><img src="./images/activity-feature.png" alt="Активность «Создай функцию платформы»" loading="lazy"><span>Активность «Создай функцию платформы»</span></div>
+          <div class="uc-shot"><img src="./images/activity-referral.png" alt="Рубрика «Приведи друга»" loading="lazy"><span>Рубрика «Приведи друга» · реф-сеть</span></div>
+          <div class="uc-shot"><img src="./images/activity-leaderboard.png" alt="Ветка «Размещённый материал»" loading="lazy"><span>Ветка «Размещённый материал» · 100+ публикаций</span></div>
+        </div>
+        <div class="about__callout glass reveal" data-delay="100" style="margin-top:24px">
+          <span class="glow-dot glow-dot--purple" style="--size:6px;margin-top:3px"></span>
+          <p><span class="about__callout-strong">Главная идея:</span> каждая интеграция это сценарий под конкретный канал и его аудиторию. Поэтому подписчики не пролистывают, а реагируют и переходят. Под Walley соберём нативные интеграции под каждый сегмент.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ КЕЙС TRADEX ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">EXAMPLE</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:16px">
+          <div class="pill"><span class="pill__dot"></span>Ещё пример</div>
+          <h2 class="h2" style="margin-top:24px;max-width:760px">Кейс Tradex</h2>
+        </div>
+        <p class="p-body reveal" data-delay="30" style="max-width:820px;margin-bottom:8px">
+          Ещё пример: Tradex — белорусская криптобиржа, для которой мы недавно начали вести
+          амбассадорскую программу. Показываем, что уже развёрнуто.
+        </p>
+
+        <div class="uc-shotgrid reveal" data-delay="100" style="grid-template-columns:repeat(2,1fr)">
+          <div class="uc-shot"><img src="./images/tradex-chat-branches.png" alt="Структура амбассадорского чата Tradex: ветки по темам" loading="lazy"><span>Структура чата Tradex — ветки по темам</span></div>
+          <div class="uc-shot"><img src="./images/tradex-bot.png" alt="Бот амбассадорской программы Tradex" loading="lazy"><span>Бот амбассадорской программы Tradex</span></div>
+        </div>
+
+        <div class="callout-note reveal" data-delay="90" style="max-width:100%;margin-top:24px">
+          <p><b style="color:var(--fg)">Зачем показываем именно это:</b> чтобы было видно не
+          абстрактное описание, а реальную структуру — как выглядит чат и бот на практике,
+          когда мы их настраиваем. Ровно так же выстроим и для Walley.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ЦЕЛЕВЫЕ АМБАССАДОРЫ ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">TARGETS</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Кого привлекаем</div>
+          <h2 class="h2" style="margin-top:24px;max-width:680px">Целевые амбассадоры</h2>
+        </div>
+        <div class="rubric-grid reveal" data-delay="30" style="grid-template-columns:repeat(5,1fr)">
+          <div class="rubric-item glass"><div class="rubric-item__title">Обзоры карты и оформления</div><div class="rubric-item__desc">Сравнения, разборы, новости обновлений</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Оплата подписок</div><div class="rubric-item__desc">Гайды, кейсы «оплатил за 5 минут»</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Техно-ютуберы и стримеры</div><div class="rubric-item__desc">Обзор карты и оформления в эфире</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Авторы VC и профильных каналов</div><div class="rubric-item__desc">Технические разборы и кейсы</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Оплата рабочих инструментов</div><div class="rubric-item__desc">Figma, Cursor, Dropbox и другие подписки</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Путешественники</div><div class="rubric-item__desc">Booking, Airbnb, eSIM за границей</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Обзорщики карт</div><div class="rubric-item__desc">Сравнение комиссий и условий</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Геймеры</div><div class="rubric-item__desc">Steam, PlayStation Store без ограничений</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Фрилансеры и айтишники</div><div class="rubric-item__desc">Оплата зарубежных инструментов и сервисов</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Образование и курсы</div><div class="rubric-item__desc">Новичкам нужен понятный первый вход</div></div>
+        </div>
+        <div class="about__callout glass reveal" data-delay="50" style="margin-top:24px">
+          <span class="glow-dot glow-dot--purple" style="--size:6px;margin-top:3px"></span>
+          <p><span class="about__callout-strong">Критерии отбора:</span> прозрачный трафик, каналы без накруток и ботов, живая активная аудитория, органический рост, релевантная тематика и чистая репутация. Проверку проходит каждый ресурс до входа в программу.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ БАЗА КОНТАКТОВ ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">NETWORK</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Наше преимущество</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">База контактов, которая экономит месяцы</h2>
+          <p class="p-body" style="margin-top:20px;max-width:760px">За годы работы у нас собралась база прямых контактов с админами крупных Telegram-каналов и блогерами. Со всеми есть <span class="hl">партнёрство и репутация</span>: мы не пишем им вслепую, а договариваемся об амбассадорстве, потому что они нас уже знают.</p>
+        </div>
+        <div class="section__grid section__grid--2 reveal" data-delay="40">
+          <div class="target-card glass">
+            <h3 class="target-card__title" style="color:rgba(255,120,120,0.9)">Холодный аутрич своими силами</h3>
+            <ul class="target-list target-list--no">
+              <li>Админ незнаком, доверия нет</li>
+              <li>Конверсия в согласие крайне низкая</li>
+              <li>Сильные блогеры на холодные письма не отвечают</li>
+              <li>Месяцы переговоров без результата</li>
+            </ul>
+          </div>
+          <div class="target-card target-card--accent glass">
+            <h3 class="target-card__title">Через нашу базу</h3>
+            <ul class="target-list">
+              <li>Контакт идёт от KOMETA, доверие уже есть</li>
+              <li>Мы ручаемся за проекты, которые берём</li>
+              <li>Амбассадоры заходят охотнее</li>
+              <li>Сразу выходим на крупных, минуя холод</li>
+              <li>Стартуем за дни, а не месяцы</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ОПЕРАЦИОННАЯ РАБОТА ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">OPS</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Процесс</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">Операционная работа каждый день</h2>
+          <p class="p-body" style="margin-top:20px;max-width:760px">Амбассадорская программа это не «настроили и забыли», а <span class="hl">ежедневная операционка</span>. Вот работа, которую команда ведёт за Walley на постоянной основе.</p>
+        </div>
+        <div class="section__grid section__grid--3 reveal" data-delay="40">
+          <div class="target-card glass">
+            <h3 class="target-card__title">Ежедневно</h3>
+            <ul class="target-list">
+              <li>Поиск новых амбассадоров по всем соцсетям</li>
+              <li>Проверка каналов на накрутки и ботов</li>
+              <li>Переговоры с блогерами и админами</li>
+              <li>Онбординг: реф-ссылки и материалы</li>
+              <li>Модерация и наполнение чата</li>
+              <li>Поддержка партнёров</li>
+            </ul>
+          </div>
+          <div class="target-card glass">
+            <h3 class="target-card__title">Еженедельно</h3>
+            <ul class="target-list">
+              <li>Задания и кампании амбассадорам</li>
+              <li>Сбор ссылок на вышедшие посты</li>
+              <li>Анализ трафика по каждому партнёру</li>
+              <li>Новый контент под инфоповоды</li>
+              <li>Лидерборд, розыгрыши, бонусы</li>
+              <li>Отчёт клиенту: охваты, переходы, регистрации</li>
+            </ul>
+          </div>
+          <div class="target-card glass">
+            <h3 class="target-card__title">Постоянно</h3>
+            <ul class="target-list">
+              <li>Контроль качества трафика, отключаем накрутчиков</li>
+              <li>База партнёров и дашборд KPI</li>
+              <li>Индивидуальные условия для крупных</li>
+              <li>Оперативная связь с клиентом</li>
+              <li>Постоянный анализ конкурентов и поиск новых инфоповодов</li>
+              <li>Тест новых форматов и масштабирование того, что заходит</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ЭТАПЫ РАБОТЫ С АМБАССАДОРОМ ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">STEPS</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:48px">
+          <div class="pill"><span class="pill__dot"></span>Путь партнёра</div>
+          <h2 class="h2" style="margin-top:24px;max-width:680px">Этапы работы с амбассадором</h2>
+        </div>
+        <div class="steps-grid reveal" data-delay="40">
+          <div class="step-chip glass"><span class="step-chip__num">1</span><div><b>Поиск</b><p>Находим партнёров по всем соцсетям, используем базу прямых контактов, анализируем контент и аудиторию.</p></div></div>
+          <div class="step-chip glass"><span class="step-chip__num">2</span><div><b>Проверка</b><p>Отсеиваем накрутки, ботов и мёртвую аудиторию. Дальше проходят только прозрачные каналы.</p></div></div>
+          <div class="step-chip glass"><span class="step-chip__num">3</span><div><b>Переговоры</b><p>Презентуем Walley и партнёрскую программу, объясняем выгоду, снимаем возражения.</p></div></div>
+          <div class="step-chip glass"><span class="step-chip__num">4</span><div><b>Онбординг</b><p>Партнёр получает индивидуальную реф-ссылку, доступ в чат и готовые материалы.</p></div></div>
+          <div class="step-chip glass"><span class="step-chip__num">5</span><div><b>Первая публикация</b><p>Помогаем с первым постом: адаптируем под канал, проверяем креатив, партнёр отчитывается ссылкой.</p></div></div>
+          <div class="step-chip glass"><span class="step-chip__num">6</span><div><b>Сопровождение</b><p>Отслеживаем переходы и регистрации, даём обратную связь, лучшим предлагаем индивидуальные условия.</p></div></div>
+          <div class="step-chip glass"><span class="step-chip__num">7</span><div><b>Контроль качества</b><p>Постоянно мониторим трафик: накрутки отключаем, в сети остаются те, кто приводит живых.</p></div></div>
+        </div>
+        <div class="about__callout glass reveal" data-delay="60" style="margin-top:28px">
+          <span class="glow-dot glow-dot--purple" style="--size:6px;margin-top:3px"></span>
+          <p><span class="about__callout-strong">В переговорах первым делом подсвечиваем партнёрские возможности Walley:</span> делаем акцент на <span class="hl">партнёрку и долгий доход</span>, а не на разовую фиксу. Так амбассадор заинтересован приводить живых пользователей, а не закрыть выплату.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ КОНТЕНТ И МАТЕРИАЛЫ ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">CONTENT</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:16px">
+          <div class="pill"><span class="pill__dot"></span>Контент</div>
+          <h2 class="h2" style="margin-top:24px;max-width:680px">Контент и материалы</h2>
+        </div>
+        <p class="p-body reveal" data-delay="30" style="max-width:820px;margin-bottom:40px">
+          Главный сценарий: <span class="hl">оплатил зарубежный сервис без банка и визитов в отделение</span>. Понятная повторяющаяся боль пользователя и сильный конверсионный контент.
+        </p>
+        <div class="section__grid section__grid--2 reveal" data-delay="50" style="margin-bottom:16px">
+          <div class="target-card glass">
+            <h3 class="target-card__title">Решает конкретную боль</h3>
+            <p class="p-body" style="margin-bottom:0">«Обычная карта не проходит: выпустил Walley, пополнил через СБП и оплатил ChatGPT за 5 минут». Гайды и живые тесты на реальных сценариях: самый конверсионный формат для этой аудитории.</p>
+          </div>
+          <div class="target-card glass">
+            <h3 class="target-card__title">Доверие и аргументы</h3>
+            <p class="p-body" style="margin-bottom:0">Карту выпускает иностранный банк, платежи проходят с 3-D Secure, уже 120 000+ пользователей и 42+ проверенных сервиса в каталоге. В контенте это снимает главное возражение «а вдруг не пройдёт оплата».</p>
+          </div>
+        </div>
+        <div class="rubric-grid reveal" data-delay="70" style="grid-template-columns:repeat(3,1fr)">
+          <div class="rubric-item glass"><div class="rubric-item__title">Гайды по оформлению</div><div class="rubric-item__desc">Выпустить, пополнить и оплатить за пять минут</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Сравнения карт</div><div class="rubric-item__desc">Walley против других сервисов по комиссии и валюте</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Кейсы оплаты сервисов</div><div class="rubric-item__desc">«Оплатил подписку за 5 минут» на реальном примере</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Разборы тарифов</div><div class="rubric-item__desc">Какую карту выбрать под свои траты</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Каталог «Где платить»</div><div class="rubric-item__desc">42+ сервиса с готовыми инструкциями — наглядно</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Разбор партнёрской программы</div><div class="rubric-item__desc">Условия уточняются с клиентом — постоянный инфоповод</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ТАЙМЛАЙН ЗАПУСКА ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">LAUNCH</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:56px">
+          <div class="pill"><span class="pill__dot"></span>Сроки</div>
+          <h2 class="h2" style="margin-top:24px;max-width:680px">Таймлайн запуска</h2>
+        </div>
+        <div class="roadmap">
+          <div class="roadmap__line"><div class="roadmap__line-fill"></div></div>
+          <div class="roadmap__item reveal" data-delay="0">
+            <div class="roadmap__dot roadmap__dot--active"><span class="roadmap__dot-core roadmap__dot-core--active"></span></div>
+            <div class="roadmap__card glass">
+              <div class="mono-caption">Неделя 1</div>
+              <h3 class="roadmap__title">Аналитика</h3>
+              <p class="roadmap__desc">Изучение продукта и аудитории, проектирование механики, бриф команды.</p>
+            </div>
+          </div>
+          <div class="roadmap__item reveal" data-delay="80">
+            <div class="roadmap__dot"><span class="roadmap__dot-core"></span></div>
+            <div class="roadmap__card glass">
+              <div class="mono-caption">Неделя 2</div>
+              <h3 class="roadmap__title">Инфраструктура</h3>
+              <p class="roadmap__desc">Чат с полной структурой веток, бот, реф-ссылки, welcome-цепочка.</p>
+            </div>
+          </div>
+          <div class="roadmap__item reveal" data-delay="160">
+            <div class="roadmap__dot"><span class="roadmap__dot-core"></span></div>
+            <div class="roadmap__card glass">
+              <div class="mono-caption">Неделя 3</div>
+              <h3 class="roadmap__title">Контент</h3>
+              <p class="roadmap__desc">Посты и креативы под все соцсети, гайды для амбассадоров.</p>
+            </div>
+          </div>
+          <div class="roadmap__item reveal" data-delay="240">
+            <div class="roadmap__dot"><span class="roadmap__dot-core"></span></div>
+            <div class="roadmap__card glass">
+              <div class="mono-caption">Неделя 4</div>
+              <h3 class="roadmap__title">Запуск привлечения</h3>
+              <p class="roadmap__desc">Поиск и проверка первых амбассадоров, онбординг, первые публикации.</p>
+            </div>
+          </div>
+          <div class="roadmap__item reveal" data-delay="320">
+            <div class="roadmap__dot"><span class="roadmap__dot-core"></span></div>
+            <div class="roadmap__card glass">
+              <div class="mono-caption">Недели 5–8</div>
+              <h3 class="roadmap__title">Масштабирование</h3>
+              <p class="roadmap__desc">Наращивание базы, оптимизация контента, еженедельная отчётность.</p>
+            </div>
+          </div>
+          <div class="roadmap__item roadmap__item--last reveal" data-delay="400">
+            <div class="roadmap__dot"><span class="roadmap__dot-core"></span></div>
+            <div class="roadmap__card glass">
+              <div class="mono-caption">Месяц 3+</div>
+              <h3 class="roadmap__title">Органический рост</h3>
+              <p class="roadmap__desc">Выход на 100+ проверенных партнёров, программа набирает собственную узнаваемость.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 5: В ЦИФРАХ ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:-3%;transform:translate(0,-50%)">SCALE</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:60px">
+          <div class="pill"><span class="pill__dot"></span>В цифрах</div>
+          <h2 class="h2" style="margin-top:24px">Программа на старте</h2>
+        </div>
+        <div class="grid-4 stats-grid">
+          <div class="stat-card glass reveal" data-delay="0">
+            <div class="stat-card__num">14+</div>
+            <div class="stat-card__label">веток</div>
+            <div class="stat-card__sub">выстроенная в логике последовательного вовлечения</div>
+          </div>
+          <div class="stat-card glass reveal" data-delay="90">
+            <div class="stat-card__num">20+</div>
+            <div class="stat-card__label">промо-постов</div>
+            <div class="stat-card__sub">адаптированных под Telegram, X (Twitter), YouTube и Habr</div>
+          </div>
+          <div class="stat-card glass reveal" data-delay="180">
+            <div class="stat-card__num">20+</div>
+            <div class="stat-card__label">визуальных креативов</div>
+            <div class="stat-card__sub">баннеры, сторис, карточки для каруселей</div>
+          </div>
+          <div class="stat-card glass reveal" data-delay="270">
+            <div class="stat-card__num">30+</div>
+            <div class="stat-card__label">амбассадоров</div>
+            <div class="stat-card__sub">первые розыгрыши и активности</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 7: КОМАНДА, ЗАКРЕПЛЁННАЯ ЗА ПРОЕКТОМ ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">TEAM</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:64px">
+          <div class="pill"><span class="pill__dot"></span>Команда</div>
+          <h2 class="h2" style="margin-top:24px">Команда, закреплённая за проектом</h2>
+        </div>
+
+        <div class="grid-4 team-grid">
+          <div class="team-card glass reveal" data-delay="0">
+            <span class="mono-caption team-card__index">01</span>
+            <div class="team-card__icon"><img src="./images/strategy.png" alt="role icon"></div>
+            <div class="team-card__name">Куратор программы (1)</div>
+            <div class="team-card__exp">Управление, стратегия, коммуникация с Walley</div>
+          </div>
+          <div class="team-card glass reveal" data-delay="60">
+            <span class="mono-caption team-card__index">02</span>
+            <div class="team-card__icon"><img src="./images/laptop.png" alt="role icon"></div>
+            <div class="team-card__name">Разработчики (2)</div>
+            <div class="team-card__exp">Бот, личный кабинет, автоматизация</div>
+          </div>
+          <div class="team-card glass reveal" data-delay="120">
+            <span class="mono-caption team-card__index">03</span>
+            <div class="team-card__icon"><img src="./images/manager.png" alt="role icon"></div>
+            <div class="team-card__name">Менеджеры по привлечению/закупщики (2-3)</div>
+            <div class="team-card__exp">Поиск, проверка и переговоры с каналами</div>
+          </div>
+          <div class="team-card glass reveal" data-delay="180">
+            <span class="mono-caption team-card__index">04</span>
+            <div class="team-card__icon"><img src="./images/analyse.png" alt="role icon"></div>
+            <div class="team-card__name">Аналитик (1)</div>
+            <div class="team-card__exp">Анализ рынка, сбор метрик, тренды, инфоповоды, отчётность</div>
+          </div>
+          <div class="team-card glass reveal" data-delay="240">
+            <span class="mono-caption team-card__index">05</span>
+            <div class="team-card__icon"><img src="./images/boss.png" alt="role icon"></div>
+            <div class="team-card__name">Личный менеджер (1)</div>
+            <div class="team-card__exp">Сопровождение амбассадоров, поддержка</div>
+          </div>
+          <div class="team-card glass reveal" data-delay="300">
+            <span class="mono-caption team-card__index">06</span>
+            <div class="team-card__icon"><img src="./images/copyright.png" alt="role icon"></div>
+            <div class="team-card__name">Копирайтер (1)</div>
+            <div class="team-card__exp">Промо-посты, гайды, тексты кампаний</div>
+          </div>
+          <div class="team-card glass reveal" data-delay="360">
+            <span class="mono-caption team-card__index">07</span>
+            <div class="team-card__icon"><img src="./images/design.png" alt="role icon"></div>
+            <div class="team-card__name">Дизайнер (1)</div>
+            <div class="team-card__exp">Баннеры, креативы, визуал программы</div>
+          </div>
+        </div>
+
+        <div class="about__callout glass reveal" data-delay="420" style="margin-top:28px">
+          <span class="glow-dot glow-dot--blue" style="--size:6px;margin-top:3px"></span>
+          <p><span class="about__callout-strong">Важно про бюджет на продление:</span> с каждым
+          месяцем продления команда не остаётся той же — она масштабируется. Бюджет не оседает
+          в марже, а реинвестируется в усиление текущей команды: больше менеджеров по привлечению,
+          больше рук на аналитике и контенте, если объём программы растёт. То, что описано выше —
+          это состав на старт, минимальный рабочий костяк, а не потолок.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 8: ЛИЧНОЕ КУРИРОВАНИЕ (QUOTE) ============ -->
+    <section class="section">
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="quote-card glass reveal" data-delay="0">
+          <div class="quote-card__scan"></div>
+          <div class="quote-card__mark" aria-hidden="true">&rdquo;</div>
+          <div class="quote-card__content">
+            <p class="quote-card__text">
+              С нашей стороны: личное курирование проекта. Готовы выходить на созвоны по любым вопросам, сверять
+              результаты и планировать следующий этап вместе с вами.
+            </p>
+            <div class="quote-card__author">
+              <div class="mono-caption">WALLEY × AMBASSADOR PROGRAM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 9: ПЛАН РАБОТЫ ПО МЕСЯЦАМ ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:-3%;transform:translate(0,-50%)">ROADMAP</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:72px">
+          <div class="pill"><span class="pill__dot"></span>Дорожная карта</div>
+          <h2 class="h2" style="margin-top:24px">План работы по месяцам</h2>
+        </div>
+
+        <div class="roadmap">
+          <div class="roadmap__line"><div class="roadmap__line-fill"></div></div>
+
+          <div class="roadmap__item reveal" data-delay="0">
+            <div class="roadmap__dot roadmap__dot--active"><span
+                class="roadmap__dot-core roadmap__dot-core--active"></span></div>
+            <div class="roadmap__card glass">
+              <div class="roadmap__card-head">
+                <div>
+                  <div class="mono-caption">Месяц 1</div>
+                  <h3 class="roadmap__title">Запуск инфраструктуры (чат, бот, контент, команда) и привлечение первой
+                    волны</h3>
+                </div>
+              </div>
+              <div class="roadmap__items">
+                <div class="roadmap__row"><span class="roadmap__bullet roadmap__bullet--active"></span>30+ амбассадоров
+                </div>
+                <div class="roadmap__row"><span class="roadmap__bullet roadmap__bullet--active"></span>первые розыгрыши
+                  и активности</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap__item reveal" data-delay="90">
+            <div class="roadmap__dot"><span class="roadmap__dot-core"></span></div>
+            <div class="roadmap__card glass">
+              <div class="roadmap__card-head">
+                <div>
+                  <div class="mono-caption">Месяц 2</div>
+                  <h3 class="roadmap__title">Расширение сети</h3>
+                </div>
+              </div>
+              <div class="roadmap__items">
+                <div class="roadmap__row"><span class="roadmap__bullet"></span>ещё 30+ амбассадоров, оптимизация механик
+                  по результатам первого месяца, начинаем развивать ходы по масштабированию самого чата</div>
+                <div class="roadmap__row"><span class="roadmap__bullet"></span>подключение челленджей, лидерборда, а
+                  также постоянных активностей</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap__item reveal" data-delay="180">
+            <div class="roadmap__dot"><span class="roadmap__dot-core"></span></div>
+            <div class="roadmap__card glass">
+              <div class="roadmap__card-head">
+                <div>
+                  <div class="mono-caption">Месяц 3</div>
+                  <h3 class="roadmap__title">Третья волна</h3>
+                </div>
+              </div>
+              <div class="roadmap__items">
+                <div class="roadmap__row"><span class="roadmap__bullet"></span>30+ амбассадоров, спецпроекты и рубрики,
+                  которые начинают масштабировать саму программу</div>
+                <div class="roadmap__row"><span class="roadmap__bullet"></span>так, чтобы у неё появилась узнаваемость
+                  на рынке и другие инфлюенсеры сами хотели подключиться</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap__item roadmap__item--last reveal" data-delay="270">
+            <div class="roadmap__dot"><span class="roadmap__dot-core"></span></div>
+            <div class="roadmap__card glass">
+              <div class="roadmap__card-head">
+                <div>
+                  <div class="mono-caption">Месяц 4 и далее</div>
+                  <h3 class="roadmap__title">Переход в органический рост. Бюджет на привлечение по большей части не
+                    требуется</h3>
+                </div>
+              </div>
+              <div class="roadmap__items">
+                <div class="roadmap__row"><span class="roadmap__bullet"></span>программа поддерживает себя за счёт
+                  реферальной модели и социального доказательства, а также видимости у медиа</div>
+                <div class="roadmap__row"><span class="roadmap__bullet"></span>наша задача на этом этапе: поддерживать
+                  активность чата, выпускать новые активности и рубрики, удерживать амбассадоров</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ЧТО ВЫ ПОЛУЧАЕТЕ НА ВЫХОДЕ ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">OUTPUT</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Итог</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">Что вы получаете на выходе</h2>
+        </div>
+        <div class="section__grid section__grid--2 reveal" data-delay="30">
+          <div class="target-card glass">
+            <h3 class="target-card__title">Инфраструктура</h3>
+            <ul class="target-list">
+              <li>Готовый Telegram-чат со структурой веток</li>
+              <li>Бот с личным кабинетом амбассадора</li>
+              <li>Система учёта и отчётности</li>
+            </ul>
+          </div>
+          <div class="target-card glass">
+            <h3 class="target-card__title">Партнёрская сеть</h3>
+            <ul class="target-list">
+              <li>Проверенные амбассадоры во всех ключевых соцсетях</li>
+              <li>Каждый прошёл антифрод-проверку</li>
+              <li>Реферальная механика, работающая без ручного контроля</li>
+            </ul>
+          </div>
+          <div class="target-card glass">
+            <h3 class="target-card__title">Контент</h3>
+            <ul class="target-list">
+              <li>20+ промо-постов и сценариев</li>
+              <li>20+ визуальных креативов</li>
+              <li>Гайды и шаблоны под платформы</li>
+            </ul>
+          </div>
+          <div class="target-card glass">
+            <h3 class="target-card__title">Процессы</h3>
+            <ul class="target-list">
+              <li>Отлаженный процесс привлечения и проверки</li>
+              <li>Еженедельная и ежемесячная отчётность</li>
+              <li>Выделенная команда на проекте</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 11: СТОИМОСТЬ ============ -->
+    <section class="section">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">PRICING</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:64px">
+          <div class="pill"><span class="pill__dot"></span>Стоимость</div>
+          <h2 class="h2" style="margin-top:24px">Стоимость</h2>
+          <p class="p-body" style="margin-top:14px;max-width:620px;margin-bottom:0">Прозрачная структура: <span class="hl">наши услуги + бюджет в запас на привлечение</span>, который тратится только на авторов и активности. <b style="color:var(--fg)">Скидка 300 $</b> — намеренно смещаем часть обычного прайса в реферальную модель, а не держим его в чистом фиксе.</p>
+        </div>
+
+        <div class="grid-4 pricing-grid">
+          <div class="pricing-card pricing-card--highlight glass reveal" data-delay="0">
+            <div class="pricing-card__badge">СТАРТ · СКИДКА 300 $</div>
+            <div class="mono-caption">МЕСЯЦ 1</div>
+            <div class="pricing-card__price"><span class="pricing-card__amount">4 200 $</span><span
+                class="pricing-card__period">/мес</span></div>
+            <p class="pricing-card__desc">Итого за месяц</p>
+            <div class="pricing-card__sep pricing-card__sep--highlight"></div>
+            <div class="pricing-card__features">
+              <div class="pricing-card__feature"><span class="pricing-card__check pricing-card__check--highlight"><svg
+                    width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#504CFF" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg></span>Наши услуги: <s style="opacity:0.55">3 000 $</s> <b>2 700 $</b></div>
+              <div class="pricing-card__feature"><span class="pricing-card__check pricing-card__check--highlight"><svg
+                    width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#504CFF" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg></span>Бюджет в запас на привлечение: 1 500 $</div>
+            </div>
+          </div>
+
+          <div class="pricing-card glass reveal" data-delay="90">
+            <div class="mono-caption">МЕСЯЦ 2</div>
+            <div class="pricing-card__price"><span class="pricing-card__amount">4 200 $</span><span
+                class="pricing-card__period">/мес</span></div>
+            <p class="pricing-card__desc">Итого за месяц</p>
+            <div class="pricing-card__sep"></div>
+            <div class="pricing-card__features">
+              <div class="pricing-card__feature"><span class="pricing-card__check"><svg width="8" height="8"
+                    viewBox="0 0 24 24" fill="none" stroke="#D9D9D9" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg></span>Наши услуги: <s style="opacity:0.55">3 000 $</s> <b>2 700 $</b></div>
+              <div class="pricing-card__feature"><span class="pricing-card__check"><svg width="8" height="8"
+                    viewBox="0 0 24 24" fill="none" stroke="#D9D9D9" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg></span>Бюджет в запас на привлечение: 1 500 $</div>
+            </div>
+          </div>
+
+          <div class="pricing-card glass reveal" data-delay="180">
+            <div class="mono-caption">МЕСЯЦ 3</div>
+            <div class="pricing-card__price"><span class="pricing-card__amount">4 200 $</span><span
+                class="pricing-card__period">/мес</span></div>
+            <p class="pricing-card__desc">Итого за месяц</p>
+            <div class="pricing-card__sep"></div>
+            <div class="pricing-card__features">
+              <div class="pricing-card__feature"><span class="pricing-card__check"><svg width="8" height="8"
+                    viewBox="0 0 24 24" fill="none" stroke="#D9D9D9" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg></span>Наши услуги: <s style="opacity:0.55">3 000 $</s> <b>2 700 $</b></div>
+              <div class="pricing-card__feature"><span class="pricing-card__check"><svg width="8" height="8"
+                    viewBox="0 0 24 24" fill="none" stroke="#D9D9D9" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg></span>Бюджет в запас на привлечение: 1 500 $</div>
+            </div>
+          </div>
+
+          <div class="pricing-card glass reveal" data-delay="270">
+            <div class="mono-caption">МЕСЯЦ 4 И ДАЛЕЕ</div>
+            <div class="pricing-card__price"><span class="pricing-card__amount">2 700 $</span><span
+                class="pricing-card__period">/мес</span></div>
+            <p class="pricing-card__desc">Итого за месяц</p>
+            <div class="pricing-card__sep"></div>
+            <div class="pricing-card__features">
+              <div class="pricing-card__feature"><span class="pricing-card__check"><svg width="8" height="8"
+                    viewBox="0 0 24 24" fill="none" stroke="#D9D9D9" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg></span>Наши услуги: <s style="opacity:0.55">3 000 $</s> <b>2 700 $</b></div>
+              <div class="pricing-card__feature"><span class="pricing-card__check"><svg width="8" height="8"
+                    viewBox="0 0 24 24" fill="none" stroke="#D9D9D9" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg></span>Бюджет в запас: не требуется (органический рост, минимальный бюджет на активности)</div>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="p-body reveal" data-delay="320" style="max-width:760px;margin-top:40px;margin-bottom:0">
+          Бюджет в запас на привлечение (1 500 $) расходуется только по факту: на выплаты по
+          лидербордам, конкурсы и рубрики для амбассадоров — то, что создаёт первую волну и
+          живую активность с первых дней. Неизрасходованный остаток переносится дальше.
+          Цена на услуги агентства снижена с 3 000 $ до 2 700 $ — мы сознательно смещаем часть
+          обычного прайса в реферальную модель.</p>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="divider"></div>
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">KOMETA</div>
+      <div class="container section__pad-top footer__inner">
+        <div class="reveal" data-delay="0">
+          <div class="footer__brand">
+            <div class="footer__brand-name">KOMETA</div>
+            <div class="footer__brand-sub">WEB3 AGENCY</div>
+          </div>
+          <h2 class="footer__title">Готовы строить<br>вместе?</h2>
+          <p class="footer__text">
+            Это предложение подготовлено исключительно для WALLEY. Мы готовы обсудить детали
+            и сформировать оптимальный формат запуска амбассадорской программы для вашей организации.
+          </p>
+
+        </div>
+
+        <div class="footer__bottom reveal" data-delay="200">
+          <div class="mono-caption">© 2026 KOMETA · WEB3 AGENCY</div>
+          <div class="footer__bottom-mid">ПОДГОТОВЛЕНО ДЛЯ WALLEY · АМБАССАДОРСКАЯ ПРОГРАММА</div>
+          <div class="mono-caption">KOMETA.WEB3</div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div id="lightboxOverlay" class="lightbox-overlay">
+    <div class="lightbox-hint">Клик по фото: приблизить / отдалить</div>
+    <button type="button" id="lightboxClose" class="lightbox-close" aria-label="Закрыть">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12" /></svg>
+    </button>
+    <div class="lightbox-overlay__img-wrap">
+      <img id="lightboxImg" src="" alt="">
+    </div>
+    <div id="lightboxCaption" class="lightbox-caption"></div>
+  </div>
+
+  
+  </div>
+
+  
+  </div>
+
+  <!-- Lightbox for screenshot gallery -->
+  <div id="lightboxOverlay" class="lightbox-overlay">
+    <div class="lightbox-hint">Нажмите на фото ещё раз, чтобы приблизить</div>
+    <button id="lightboxClose" class="lightbox-close" aria-label="Закрыть">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="lightbox-overlay__img-wrap">
+      <img id="lightboxImg" src="" alt="">
+    </div>
+    <div id="lightboxCaption" class="lightbox-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
